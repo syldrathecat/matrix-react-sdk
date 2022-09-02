@@ -596,8 +596,6 @@ export default class RoomList extends React.PureComponent<IProps, IState> {
 
                 if (this.state.feature_favourite_messages && orderedTagId === DefaultTagID.SavedItems) {
                     extraTiles = this.renderFavoriteMessagesList();
-                } else {
-                    extraTiles = null;
                 }
 
                 const aesthetics = TAG_AESTHETICS[orderedTagId];
